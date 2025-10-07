@@ -4,36 +4,82 @@
 
 // ! header Fitness
 .navegacion {
-    // font-size: 1.5rem;
+    font-size: 1.5rem;
+    padding: .8rem 2rem;
+
+    @include m.desktop {
+        padding: 0 10rem;
+        font-size: 2rem;
+    }
+    
+
+    .logotipo > a {
+        font-size: 3rem;
+        margin-right: 2rem;
+
+        @include m.desktop {
+            font-size: 3.5rem;
+        }
+        
+    }
 }
 .contenedor_logo-redes {
     display: flex;
     gap: 5rem;
     justify-content: center;
     align-items: center;
-    // font-size: 1.3rem;
-
-    >.contenedor_icons {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-
-        @include m.desktop {
-            flex-direction: row;
-            gap: 5rem;
-        }
-    }
+    font-size: 1.5rem;
+    padding: 1rem 0;
 
     @include m.desktop {
 
         font-size: 2rem;
 
     }
+
+    >.contenedor_icons {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+        gap: .5rem;
+        @include m.desktop {
+            flex-direction: row;
+            gap: 5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        > .contenedor_contacto {
+            display: flex;
+            flex-direction: column;
+
+            @include m.desktop {
+                flex-direction: row;
+            }
+
+            > span {
+                display: none;
+                flex-direction: column;
+                
+
+                @include m.desktop {
+                    display: block;
+                }
+                
+            }
+        }
+    }
+
+    
 }
 .loguito {
-    width: 8rem;
+    width: 7rem;
+
+    @include m.desktop {
+        width: 8rem;
+    }
+    
 
     > img {
     width: 100%;
