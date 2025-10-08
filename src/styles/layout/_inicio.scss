@@ -318,18 +318,23 @@ section {
   padding: 0 2rem;
 
   .galeria {
-    @include m.grid(1, 2rem);
+    @include m.grid(1, 4rem);
 
 
     .texto_en_imagen {
       position: relative;
       border-radius: 1rem;
       padding: 0;
-
-      >img {
+      border: #fff solid 1px;
+      .carousel-item {
+        object-fit: cover;
+      }
+      img {
+        
         padding: 0;
         margin: 0;
         width: 100%;
+        border-radius: 1rem;
       }
       >h5 {
         position: absolute;
@@ -343,7 +348,10 @@ section {
         left: 50%;
         bottom: 0;
         transform: translate(-50%, 0);
+        border-top: #fff solid 1px;
+        border-radius: 0 0 1rem 1rem;
 
+        
         background: #000000;
         // background: linear-gradient(90deg,#000000 80%, rgba(0,255,0,0) 100%);
         // background: -webkit-linear-gradient(90deg,#000000 80%, rgba(0,255,0,0) 100%);
@@ -353,5 +361,4 @@ section {
     }
   }
 }
-
 
