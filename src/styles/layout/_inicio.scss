@@ -194,7 +194,7 @@ section {
       ul {
         color: #fff;
         text-align: start;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
       }
 
       h5 {
@@ -298,16 +298,15 @@ section {
     }
     .btn-add {
       // background: $clr-blue;
-      background: v.$azul;
+      // background: v.$azul;
     }
     .progress-bar:after {
       // width: 20%;
       background: $clr-blue;
     }
     .btn-countdown {
-      &:hover {
-        background: $clr-blue;
-      }
+      background: $clr-blue;
+    
     }
   }
 }
@@ -358,6 +357,133 @@ section {
         // background: -moz-linear-gradient(90deg,#000000 80%, rgba(0,255,0,0) 100%);
 
       }
+    }
+  }
+}
+
+ .green {
+    background: radial-gradient(
+      ellipse at right top,
+      #107667ed 0%,
+      #151419 47%,
+      #151419 100%
+    );
+
+    &:before {
+      background: linear-gradient(
+          45deg,
+          #232228,
+          #232228,
+          #232228,
+          #232228,
+          #01c3a8
+        )
+        border-box;
+    }
+    .btn-add {
+      background: $clr-green;
+    }
+    .progress-bar:after {
+      width: 90%;
+      background: $clr-green;
+    }
+
+    .btn-countdown {
+      &:hover {
+        background: $clr-green;
+      }
+    }
+  }
+  .blue {
+    background: radial-gradient(
+      ellipse at right top,
+      #00458f8f 0%,
+      #151419 45%,
+      #151419 100%
+    );
+
+    &:before {
+      background: linear-gradient(
+          45deg,
+          #232228,
+          #232228,
+          #232228,
+          #232228,
+          #1890ff
+        )
+        border-box;
+    }
+    .btn-add {
+      background: $clr-blue;
+    }
+    .progress-bar:after {
+      width: 20%;
+      background: $clr-blue;
+    }
+    .btn-countdown {
+      background: $clr-blue;
+      
+    }
+  }
+  .orange {
+    background: radial-gradient(
+      ellipse at right top,
+      #ffb74194 0%,
+      #151419 47%,
+      #151419 100%
+    );
+
+    &:before {
+      background: linear-gradient(
+          45deg,
+          #232228,
+          #232228,
+          #232228,
+          #232228,
+          #ffb741
+        )
+        border-box;
+    }
+
+
+    >.carta-footer {
+
+    .btn-countdown {
+      background: $clr-orange;
+    }
+  }
+  }
+.red {
+  background: radial-gradient(
+    ellipse at right top,
+    #a63d2a82 0%,
+    #151419 47%,
+    #151419 100%
+  );
+
+  &:before {
+    background: linear-gradient(
+        45deg,
+        #232228,
+        #232228,
+        #232228,
+        #232228,
+        #a63d2a
+      )
+      border-box;
+  }
+  .btn-add {
+    background: $clr-red;
+  }
+  .progress-bar:after {
+    width: 50%;
+    background: $clr-red;
+  }
+
+  >.carta-footer {
+
+    .btn-countdown {
+      background: $clr-red;
     }
   }
 }

@@ -36,4 +36,23 @@ body {
 }
 
 
+//! BOTON FLOTANTE WSP
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 28px;
+  padding: 15px 18px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+  z-index: 1000;
+}
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
 
+
+//* FIN BOTON FLOTANTE WSP
